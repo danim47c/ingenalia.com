@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+dev = "python ingenalia_com/manage.py runserver 0.0.0.0:4747"
+makemigrations = "python ingenalia_com/manage.py makemigrations"
+migrate = "python ingenalia_com/manage.py migrate"
